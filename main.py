@@ -174,7 +174,7 @@ def main():
                     except CantMakeTransition:
                         print(uid, '- can\'t make transition')
                         log.write(uid + ' ' + str(ind + 1) + ' ' + str(len(tasks.json())) + ' 103\n')
-            else:
+            elif args.sort_flag == "1":
                 tasks_list = tasks.json()
                 tasks_list.sort(key=tasks_key, reverse=True)
                 task = tasks_list[0]
@@ -213,6 +213,9 @@ def main():
                 except CantMakeTransition:
                     print(uid, '- can\'t make transition')
                     log.write(uid + ' 103\n')
+            else:
+                print("Wrong sorting parameters (should be 0 or 1).")
+                break
 
     log.write('-\n')
     log.close()
