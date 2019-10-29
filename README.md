@@ -16,7 +16,7 @@
 
 1) Поместить .csv-файл в корневую папку
 
-2) Получить токен на https://oauth.yandex.ru и поместить его в credentials.py вместе с organization id (в настройках трекера)
+2) Получить токен на https://oauth.yandex.ru и поместить его в credentials.py вместе с organization id (https://tracker.yandex.ru/settings?from=head-menu)
 
 3) Запустить с нужными параметрами
 
